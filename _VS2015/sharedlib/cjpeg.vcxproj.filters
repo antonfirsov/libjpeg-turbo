@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\cjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\cdjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\rdgif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\rdppm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\rdswitch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\rdbmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\rdtarga.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\sharedlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{89C2DEA2-DCC8-32C8-BE65-37C2EABF4EBA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

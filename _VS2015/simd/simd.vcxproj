@@ -1,0 +1,1117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4286E613-5F69-3662-A741-491F7A07D448}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>simd</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015;C:\dev\GitHub\_ImageSharp\libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015;C:\dev\GitHub\_ImageSharp\libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015;C:\dev\GitHub\_ImageSharp\libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015;C:\dev\GitHub\_ImageSharp\libjpeg-turbo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/dev/GitHub/_ImageSharp/libjpeg-turbo -BC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015 --check-stamp-file C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/dev/GitHub/_ImageSharp/libjpeg-turbo -BC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015 --check-stamp-file C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/dev/GitHub/_ImageSharp/libjpeg-turbo -BC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015 --check-stamp-file C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/dev/GitHub/_ImageSharp/libjpeg-turbo -BC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015 --check-stamp-file C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jfdctflt-sse-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jfdctflt-sse-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctflt-sse-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctflt-sse-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctflt-sse-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctflt-sse-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jfdctflt-sse-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctflt-sse-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctflt-sse-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctflt-sse-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctflt-sse-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jfdctflt-sse-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctflt-sse-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctflt-sse-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctflt-sse-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctflt-sse-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jfdctflt-sse-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctflt-sse-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctflt-sse-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctflt-sse-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctflt-sse-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jccolor-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jccolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jccolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jccolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jccolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jccolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jccolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jccolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jccolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jccolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jccolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jccolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jccolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jccolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jccolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jccolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jccolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jccolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jcgray-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jcgray-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcgray-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcgray-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcgray-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgray-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgryext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jcgray-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcgray-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcgray-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcgray-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgray-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgryext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jcgray-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcgray-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcgray-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcgray-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgray-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgryext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jcgray-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcgray-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcgray-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcgray-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgray-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcgryext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jchuff-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jchuff-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jchuff-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jchuff-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jchuff-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jchuff-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jchuff-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jchuff-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jchuff-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jchuff-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jchuff-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jchuff-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jchuff-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jchuff-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jchuff-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jchuff-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jchuff-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jchuff-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jchuff-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jchuff-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jchuff-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jcsample-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jcsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jcsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jcsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jcsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jcsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jcsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jcsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jdcolor-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jdcolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdcolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdcolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdcolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jdcolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdcolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdcolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdcolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jdcolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdcolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdcolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdcolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jdcolor-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdcolor-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdcolor-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdcolor-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolor-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdcolext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jdmerge-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jdmerge-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdmerge-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdmerge-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdmerge-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmerge-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmrgext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jdmerge-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdmerge-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdmerge-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdmerge-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmerge-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmrgext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jdmerge-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdmerge-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdmerge-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdmerge-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmerge-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmrgext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jdmerge-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdmerge-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdmerge-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdmerge-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmerge-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdmrgext-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jdsample-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jdsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jdsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jdsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jdsample-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jdsample-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jdsample-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jdsample-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdsample-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jfdctfst-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jfdctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jfdctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jfdctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jfdctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jfdctint-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jfdctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jfdctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jfdctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jfdctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jfdctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jfdctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jfdctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jfdctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctflt-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jidctflt-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctflt-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctflt-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctflt-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctflt-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jidctflt-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctflt-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctflt-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctflt-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctflt-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jidctflt-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctflt-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctflt-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctflt-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctflt-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jidctflt-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctflt-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctflt-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctflt-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctflt-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctfst-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jidctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jidctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jidctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jidctfst-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctfst-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctfst-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctfst-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctfst-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctint-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jidctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jidctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jidctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jidctint-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctint-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctint-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctint-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctint-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctred-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jidctred-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctred-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctred-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctred-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctred-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jidctred-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctred-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctred-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctred-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctred-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jidctred-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctred-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctred-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctred-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctred-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jidctred-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jidctred-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jidctred-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jidctred-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jidctred-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jquantf-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jquantf-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquantf-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquantf-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquantf-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquantf-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jquantf-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquantf-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquantf-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquantf-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquantf-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jquantf-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquantf-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquantf-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquantf-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquantf-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jquantf-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquantf-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquantf-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquantf-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquantf-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jquanti-sse2-64.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/jquanti-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquanti-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquanti-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquanti-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquanti-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/jquanti-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquanti-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquanti-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquanti-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquanti-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/jquanti-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquanti-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquanti-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquanti-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquanti-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/jquanti-sse2-64.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\NASM\nasm.exe" -fwin64 -DWIN64 -D__x86_64__ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/win/ -IC:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/ C:/dev/GitHub/_ImageSharp/libjpeg-turbo/simd/jquanti-sse2-64.asm -oC:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/simd/$(Configuration)/jquanti-sse2-64.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/8518ab838d7c65f0fda35c4f4149ca1e/jquanti-sse2-64.obj.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jquanti-sse2-64.asm;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jcolsamp.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jdct.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jpeg_nbits_table.inc;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\ec0e13f101c557d97d8593902f26d83f\simd.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/ec0e13f101c557d97d8593902f26d83f/simd.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/ec0e13f101c557d97d8593902f26d83f/simd.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/ec0e13f101c557d97d8593902f26d83f/simd.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/CMakeFiles/ec0e13f101c557d97d8593902f26d83f/simd.rule;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctflt-sse-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jccolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcgray-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jchuff-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jcsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdcolor-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdmerge-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jdsample-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jfdctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctflt-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctfst-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctint-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jidctred-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquantf-sse2-64.obj;C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\$(Configuration)\jquanti-sse2-64.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\simd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/dev/GitHub/_ImageSharp/libjpeg-turbo/_VS2015/ZERO_CHECK.vcxproj">
+      <Project>96FDA3CC-32A6-362D-AA96-DCEA9DE81FC5</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

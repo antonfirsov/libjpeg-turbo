@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\sharedlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{89C2DEA2-DCC8-32C8-BE65-37C2EABF4EBA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\jcstest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\qdbmp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\qdbmp.h" />
+  </ItemGroup>
+</Project>

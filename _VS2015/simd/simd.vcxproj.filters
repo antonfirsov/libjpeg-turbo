@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\simd\CMakeLists.txt" />
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jfdctflt-sse-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jccolor-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jcgray-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jchuff-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jcsample-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jdcolor-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jdmerge-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jdsample-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jfdctfst-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jfdctint-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctflt-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctfst-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctint-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jidctred-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jquantf-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\8518ab838d7c65f0fda35c4f4149ca1e\jquanti-sse2-64.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\CMakeFiles\ec0e13f101c557d97d8593902f26d83f\simd.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\GitHub\_ImageSharp\libjpeg-turbo\_VS2015\simd\CMakeFiles\simd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A61FBB18-AED0-3282-B851-159795A03B14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
