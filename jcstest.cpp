@@ -313,6 +313,27 @@ int read_JPEG_file(char *filename)
 }
 
 
+void WriteMetaData(jpeg_decompress_struct srcinfo, FILE* outputFile)
+{
+	const short componentCount = (short)srcinfo.num_components;
+
+	fwrite(&componentCount, sizeof(short), 1, outputFile);
+
+	for (JDIMENSION compNum = 0; compNum < srcinfo.num_components; compNum++)
+	{
+		jpeg_component_info* compInfo = &srcinfo.comp_info[compNum];
+
+		const short widthInBlocks = (short) compInfo->width_in_blocks;
+		const short heightInBlocks = (short) compInfo->height_in_blocks;
+
+		printf("compNum: %d, widthInBlocks: %d, heightInBlocks: %d\n", compNum, widthInBlocks, heightInBlocks);
+
+		fwrite(&widthInBlocks, sizeof(short), 1, outputFile);
+		fwrite(&heightInBlocks, sizeof(short), 1, outputFile);
+
+		size_t blockRowSize = (size_t) sizeof(JCOEF) * DCTSIZE2 * widthInBlocks;
+	}
+}
 
 void process_coeffs(struct jpeg_decompress_struct srcinfo, 
 	jvirt_barray_ptr* src_coef_arrays,
@@ -322,7 +343,6 @@ void process_coeffs(struct jpeg_decompress_struct srcinfo,
 
 	printf("COMP COUNT: %d\n", srcinfo.num_components);
 	
-
 	FILE* outputFile = fopen(outputFileName, "wb");
 	if (!outputFile)
 	{
@@ -332,15 +352,14 @@ void process_coeffs(struct jpeg_decompress_struct srcinfo,
 
 	printf("writing to: %s\n", outputFileName);
 
+	// Dumping every metadata entry as Int16!
+	WriteMetaData(srcinfo, outputFile);
+
 	for (JDIMENSION compNum = 0; compNum < srcinfo.num_components; compNum++) {
 		jpeg_component_info* compInfo = &srcinfo.comp_info[compNum];
 
-		const JDIMENSION widthInBlocks = compInfo->width_in_blocks;
-		const JDIMENSION heightInBlocks = compInfo->height_in_blocks;
-
-		size_t blockRowSize = (size_t) sizeof(JCOEF) * DCTSIZE2 * widthInBlocks;
-
-		printf("compNum: %d, widthInBlocks: %d, heightInBlocks: %d\n", compNum, widthInBlocks, heightInBlocks);
+		const short widthInBlocks = (short)compInfo->width_in_blocks;
+		const short heightInBlocks = (short)compInfo->height_in_blocks;
 		
 		for (JDIMENSION rowNum = 0; rowNum < heightInBlocks; rowNum++) {
 			// A pointer to the virtual array of dct values
