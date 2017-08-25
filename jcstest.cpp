@@ -417,7 +417,7 @@ int main(int argc, char **argv)
 		printf("Failed to open %s", inputFileName);
 	}
 
-	char foo[42];
-	scanf(foo);
+	/*char foo[42];
+	scanf(foo);*/
     return 0;
 }
