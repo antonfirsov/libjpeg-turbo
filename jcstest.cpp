@@ -314,12 +314,23 @@ int read_JPEG_file(char *filename)
 
 
 
-void process_coeffs(struct jpeg_decompress_struct srcinfo, jvirt_barray_ptr * src_coef_arrays, const char* sourceFile)
+void process_coeffs(struct jpeg_decompress_struct srcinfo, 
+	jvirt_barray_ptr* src_coef_arrays,
+	const char* outputFileName)
 {
 	JBLOCKARRAY rowPtrs[MAX_COMPONENTS];
 
-	//cout << "Started reading DCT" << endl;
 	printf("COMP COUNT: %d\n", srcinfo.num_components);
+	
+
+	FILE* outputFile = fopen(outputFileName, "wb");
+	if (!outputFile)
+	{
+		printf("Failed to open %s", outputFileName);
+		return;
+	}
+
+	printf("writing to: %s\n", outputFileName);
 
 	for (JDIMENSION compNum = 0; compNum < srcinfo.num_components; compNum++) {
 		jpeg_component_info* compInfo = &srcinfo.comp_info[compNum];
@@ -330,20 +341,7 @@ void process_coeffs(struct jpeg_decompress_struct srcinfo, jvirt_barray_ptr * sr
 		size_t blockRowSize = (size_t) sizeof(JCOEF) * DCTSIZE2 * widthInBlocks;
 
 		printf("compNum: %d, widthInBlocks: %d, heightInBlocks: %d\n", compNum, widthInBlocks, heightInBlocks);
-
-		char extensionStr[16];
-		extensionStr[0] = 0;
-		sprintf(extensionStr, ".comp%d", compNum);
-
-		char destFileName[256];
-		destFileName[0] = 0;
-		strcpy(destFileName, sourceFile);
-		strcat(destFileName, extensionStr);
 		
-		printf("writing to: %s\n", destFileName);
-
-		FILE* destFile = fopen(destFileName, "wb");
-
 		for (JDIMENSION rowNum = 0; rowNum < heightInBlocks; rowNum++) {
 			// A pointer to the virtual array of dct values
 			rowPtrs[compNum] = ((&srcinfo)->mem->access_virt_barray)((j_common_ptr)&srcinfo, src_coef_arrays[compNum], rowNum, (JDIMENSION)1, FALSE);
@@ -355,30 +353,26 @@ void process_coeffs(struct jpeg_decompress_struct srcinfo, jvirt_barray_ptr * sr
 				short* block = rowPtrs[compNum][0][blockNum];
 				//printf("B[%d][0]=%d | ", blockNum, block[0]);
 
-				fwrite(block, sizeof(short), 64, destFile);
+				fwrite(block, sizeof(short), 64, outputFile);
 
-				for (JDIMENSION i = 0; i<DCTSIZE2; i++) {
-					//and print them to standard out - one per line
-															
-					//cout << rowPtrs[compNum][0][blockNum][i] << endl;
-					
-				}
+				//for (JDIMENSION i = 0; i<DCTSIZE2; i++) {
+					//and print them to standard out - one per line			
+				//}
 			}
 			//printf("\n");
 		}
-
-		fclose(destFile);
 	}
+	fclose(outputFile);
 }
 
-int read_blocks(const char* filename)
+int dump_blocks(const char* inputJpegFileName, const char* outputFileName)
 {
 	FILE * infile;
 	struct jpeg_decompress_struct srcinfo;
 	struct jpeg_error_mgr srcerr;
 
-	if ((infile = fopen(filename, "rb")) == NULL) {
-		fprintf(stderr, "can't open %s\n", filename);
+	if ((infile = fopen(inputJpegFileName, "rb")) == NULL) {
+		fprintf(stderr, "can't open %s\n", inputJpegFileName);
 		return 0;
 	}
 
@@ -389,7 +383,7 @@ int read_blocks(const char* filename)
 
 	//coefficients
 	jvirt_barray_ptr * src_coef_arrays = jpeg_read_coefficients(&srcinfo);
-	process_coeffs(srcinfo, src_coef_arrays, filename);
+	process_coeffs(srcinfo, src_coef_arrays, outputFileName);
 
 	jpeg_destroy_decompress(&srcinfo);
 	fclose(infile);
@@ -398,25 +392,32 @@ int read_blocks(const char* filename)
 
 int main(int argc, char **argv)
 {
-	read_JPEG_file("c:\\dev\\GitHub\\_ImageSharp\\jpeg-port\\tests\\ImageSharp.Tests\\TestImages\\Formats\\Jpg\\progressive\\progress.jpg");
-	return 0;
-
-	char* fileName = "c:\\dev\\GitHub\\_ImageSharp\\jpeg-port\\tests\\ImageSharp.Tests\\TestImages\\Formats\\Jpg\\progressive\\progress.jpg";
-	/*char* fileName = "c:\\dev\\GitHub\\_ImageSharp\\jpeg-port\\tests\\ImageSharp.Tests\\TestImages\\Formats\\Jpg\\baseline\\Calliphora.jpg";*/
-
-	if (argc>1)
+	if (argc < 2)
 	{
-		fileName = argv[1];
+		printf("usage:");
+		printf("dump-jpeg-coeffs <input.jpg> [output.dctdump]");
+		return -1;
+	}
+	char* inputFileName = argv[1];
+	char outputFileName[256];
+	outputFileName[0] = '\0';
+
+	if (argc == 2)
+	{
+		strcpy(outputFileName, inputFileName);
+		strcat(outputFileName, ".dctdump");
+	}
+	else
+	{
+		strcpy(outputFileName, argv[2]);
+	}
+	
+	if (!dump_blocks(inputFileName, outputFileName))
+	{
+		printf("Failed to open %s", inputFileName);
 	}
 
-	if (!read_blocks(fileName))
-	{
-		printf("Failed to open %s", fileName);
-	}
-
-	printf("LOL?");
 	char foo[42];
 	scanf(foo);
-    //hello_kocsog();
-  return 0;
+    return 0;
 }
